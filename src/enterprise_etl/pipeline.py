@@ -74,7 +74,7 @@ def validate_dimensions(customer_rows, product_rows):
             if ident in clean_products:
                 raise ValueError("duplicate product_id")
             clean_products[ident] = dict(product_id=ident, product_name=name,
-                                        category=category, unit_cost_cents=money_cents(row["unit_cost"]))
+                                         category=category, unit_cost_cents=money_cents(row["unit_cost"]))
         except (ValueError, AttributeError) as exc:
             rejected.append(("products", line, str(exc), row))
     return clean_customers, clean_products, rejected
