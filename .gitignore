@@ -1,0 +1,22 @@
+# Local databases, generated outputs and credentials
+artifacts/*
+!artifacts/.gitkeep
+.env
+*.db
+*.sqlite
+*.sqlite3
+*.log
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/

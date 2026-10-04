@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud-enterprise-etl"
+version = "1.0.0"
+description = "Auditable retail data ETL with SQL warehouse, data quality, optional Spark, Airflow and S3"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "SQLAlchemy>=2.0,<3",
+  "pandas>=2.0,<3",
+  "boto3>=1.28,<2",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg[binary]>=3.1,<4"]
+spark = ["pyspark>=3.5,<4"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+enterprise-etl = "enterprise_etl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

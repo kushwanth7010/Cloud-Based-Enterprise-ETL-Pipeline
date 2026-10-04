@@ -1,0 +1,4 @@
+source,row_number,reason,raw_json
+orders,62,quantity must be positive,"{""customer_id"": ""C001"", ""discount_pct"": ""0.00"", ""order_date"": ""2026-08-18"", ""order_id"": ""O0061"", ""product_id"": ""P001"", ""quantity"": ""-2"", ""unit_price"": ""25.00""}"
+orders,63,unknown customer_id or product_id,"{""customer_id"": ""C999"", ""discount_pct"": ""0.00"", ""order_date"": ""2026-08-18"", ""order_id"": ""O0062"", ""product_id"": ""P001"", ""quantity"": ""1"", ""unit_price"": ""25.00""}"
+orders,64,duplicate order_id in source,"{""customer_id"": ""C006"", ""discount_pct"": ""0.05"", ""order_date"": ""2026-08-02"", ""order_id"": ""O0001"", ""product_id"": ""P001"", ""quantity"": ""1"", ""unit_price"": ""23.10""}"

@@ -1,0 +1,14 @@
+{
+  "dataset": "synthetic_demo",
+  "source_order_rows": 63,
+  "valid_orders_in_warehouse": 60,
+  "rejected_order_rows_per_run": 3,
+  "customers": 12,
+  "products": 6,
+  "net_revenue_sample_currency": "2715.94",
+  "gross_profit_sample_currency": "920.44",
+  "local_tests_passed": 11,
+  "tested_backend": "SQLite",
+  "tested_aggregation": "Pandas",
+  "aws_orchestration_spark_postgres_live_deployment_verified": false
+}

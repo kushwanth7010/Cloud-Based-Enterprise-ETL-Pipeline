@@ -1,0 +1,16 @@
+region,category,order_count,net_revenue,gross_profit
+East,Accessories,2,45.04,17.04
+East,Electronics,5,230.00,80.75
+East,Home Office,4,233.44,76.24
+North,Accessories,1,87.78,31.78
+North,Electronics,2,110.08,31.58
+North,Home Office,8,439.26,150.46
+North,Stationery,1,12.46,4.06
+South,Accessories,4,229.84,75.84
+South,Electronics,2,39.96,11.46
+South,Home Office,9,447.26,145.66
+South,Stationery,3,23.52,6.72
+West,Accessories,4,221.75,81.75
+West,Electronics,5,307.44,114.19
+West,Home Office,6,249.71,79.71
+West,Stationery,4,38.40,13.20
